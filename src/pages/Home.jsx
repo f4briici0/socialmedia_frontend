@@ -1,5 +1,6 @@
 import { CreatePost } from "../components/CreatePostArea";
 import { Header } from "../components/Header";
+import { MiniPlayer } from "../components/MiniPlayer";
 import { PostCard } from "../components/PostCard";
 
 export default function HomePage() {
@@ -40,6 +41,8 @@ export default function HomePage() {
             likes={56}
             comments={12}
           />
+
+          <MiniPlayer />
         </div>
       </main>
     </div>

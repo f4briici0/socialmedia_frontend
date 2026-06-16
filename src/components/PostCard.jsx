@@ -1,5 +1,3 @@
-"use client"; // Mantendo por causa do useState, caso use Next.js
-
 import { useState } from "react";
 import {
   Heart,
@@ -7,7 +5,7 @@ import {
   MessageCircle,
   MoreHorizontal,
   Flag,
-} from "lucide-react"; // Removi o Camera que não estava em uso
+} from "lucide-react";
 
 export const PostCard = ({
   authorName,
@@ -44,7 +42,6 @@ export const PostCard = ({
           <p className="text-xs text-zinc-600 mt-1">{timeAgo}</p>
         </div>
 
-        {/* MUDANÇA AQUI: Adicionado 'self-start' e '-mt-1' */}
         <div className="ml-auto relative self-start -mt-1">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -87,7 +84,8 @@ export const PostCard = ({
         {content}
       </p>
 
-      <div className="flex gap-7 mt-6 text-zinc-600 pt-4">
+      {/* MODIFICAÇÃO AQUI: Adicionado border-t e border-zinc-800/50 */}
+      <div className="flex gap-7 mt-6 text-zinc-600 pt-4 border-t border-zinc-800/50">
         <button className="cursor-pointer flex items-center gap-2.5 transition group hover:text-red-500">
           <Heart
             size={20}

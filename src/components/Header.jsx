@@ -17,7 +17,7 @@ export const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-[#111113]/90 backdrop-blur-sm border-b border-zinc-800/50 px-6 py-3">
       <div className="max-w-xl mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-semibold text-blue-300/90 tracking-tight">
+        <h1 className="text-2xl font-semibold text-green-300/90 tracking-tight">
           Talki
         </h1>
         <div className="flex items-center gap-5 text-zinc-500">

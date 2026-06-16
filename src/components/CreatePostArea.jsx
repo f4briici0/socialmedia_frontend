@@ -34,9 +34,6 @@ export const CreatePost = () => {
           <button className="hover:text-white transition-colors cursor-pointer">
             <ImageIcon size={20} strokeWidth={1.5} />
           </button>
-          <button className="hover:text-white transition-colors cursor-pointer">
-            <Code size={20} strokeWidth={1.5} />
-          </button>
         </div>
         <button className="cursor-pointer bg-gray-100/10 hover:bg-gray-100/20 text-white px-5 py-2 rounded-full text-sm font-semibold transition shadow-sm">
           Postar
